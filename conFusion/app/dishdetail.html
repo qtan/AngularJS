@@ -74,8 +74,8 @@
     <script>
         var app = angular.module('confusionApp', []);
         app.controller('dishDetailController', function () {
-            var vm = this;
-            vm.dish = {
+            //加个this 指定            
+            this.dish = {
                 name: 'Uthapizza',
                 image: 'images/uthapizza.png',
                 category: 'mains',
@@ -115,7 +115,8 @@
                 }
             ]
             };
-            vm.sortType = '';
+
+            this.sortType = ''; //设个虚值 可加可不加
         });
     </script>
 
