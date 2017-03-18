@@ -73,6 +73,7 @@ angular.module("confusionApp", [])
         };
 }])
 
+
 .controller('ContactController', ['$scope', function ($scope) {
     // Whatever we define here will also be accessible in the FeedbackController
     $scope.feedback = {
